@@ -202,12 +202,13 @@ def start_Game():
                 text_on_screen(selected_word,500,200)
                 reStart = TRUE
                 
+                # Code to restart or Quit based on user input
                 if (event.type==KEYDOWN and event.key == pygame.K_RETURN):
                     print (" GAME RESTARTED ",reStart)
                     start_Game()
                 if (event.type==KEYDOWN and event.key == pygame.K_ESCAPE):
                     pygame.quit()
                     sys.exit(0)
-                
 
+# initilization of Game
 start_Game()
